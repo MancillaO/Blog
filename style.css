@@ -1,0 +1,223 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0 auto;
+    background-color: #999999;
+    width: 100%;
+
+}
+
+header {
+    background-color: #364552;
+    color: white;
+    /* padding: 1rem 2rem; */
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+    margin-bottom: 1rem;
+}
+
+header:hover {
+    background-color: #323c44;
+    transition: background-color 0.5s;
+}
+
+
+header h1 {
+    font-size: 4rem;
+    transition: all 0.5s ease;
+}
+
+header h1:hover {
+    font-size: 4.3rem;
+    transition: .8s;
+
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    /* margin: 9rem auto; */
+    /* margin-top: 1rem; */
+}
+
+/* .container h2{
+    text-align: center;
+} */
+
+section article {
+    transition: all 0.3s ease;
+    background-color: #fff;
+    /* margin: 1rem 0; */
+    border-radius: 0.5rem;
+    padding: 0.25rem 0;
+    cursor: pointer;
+    width: 32%;
+    margin: 0 auto;
+    min-width: 300px;
+    max-width: 600px;
+}
+
+article img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+
+}
+
+section article:hover {
+    box-shadow: 0 0.1rem 2rem rgba(0, 0, 0, 0.3);
+
+    article h2 {
+        font-size: 1.5rem;
+    }
+}
+
+section article h2,
+section article p {
+    margin: 1rem;
+}
+
+footer {
+    background-color: #222;
+    padding: 3rem;
+    color: white;
+    margin-top: 1rem;
+
+}
+
+footer section {
+    float: right;
+    display: flex;
+    justify-content: flex-end;
+    justify-content: space-evenly;
+}
+
+footer p {
+    margin: 0 0.5rem;
+}
+
+footer a {
+    transition: color 0.3s ease;
+    color: white;
+    text-decoration: none;
+    /* margin: 0 0 0 1rem; */
+}
+
+footer a:hover {
+    color: cornflowerblue;
+}
+
+
+
+/* Laptop */
+/* @media screen and (min-width: 960px) and (max-width: 1328px){
+    .container{
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+    section article {
+        width: 32%;
+        margin: 2rem auto;
+    }
+    .container h2 {
+        font-size: 30px;
+    }
+    .container p{
+        font-size: 20px;
+        padding: 1.5rem 0.5rem;
+    }
+    header h1 {
+        font-size: 60px;
+    }
+    footer a, p {
+        font-size: 27px;
+    }
+    body{
+        background-color: black;
+    }
+} */
+
+/* Tablet */
+@media screen and (min-width: 601px) and (max-width: 990px) {
+    .container {
+        text-align: center;
+        display: block;
+        margin-top: 3rem;
+        margin-bottom: 4rem;
+        width: 100%;
+    }
+
+    header h1 {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .container article {
+        width: 90%;
+        margin: 2rem auto;
+    }
+
+    article h2 {
+        font-size: 40px;
+    }
+
+    article p {
+        font-size: 26px;
+    }
+
+    footer a,
+    p {
+        font-size: 20px;
+    }
+}
+
+/* Phone */
+@media screen and (min-width: 320px) and (max-width: 600px) {
+    .container {
+        text-align: center;
+        display: block;
+        margin-top: 3rem;
+        margin-bottom: 4rem;
+        width: 100%;
+    }
+
+    section article {
+        width: 90%;
+        margin: 2rem auto;
+    }
+
+    article h2 {
+        font-size: 30px;
+        
+    }
+    section article h2{
+        margin-bottom: 10px;
+    }
+    section article p {
+        margin-bottom: 10px;
+    }
+    .container p {
+        font-size: 18px;
+    }
+
+    header {
+        text-align: center;
+        
+    }
+
+    header h1 {
+        font-size: 50px;
+
+    }
+
+    footer a,
+    p {
+        font-size: 12px;
+    }
+}
